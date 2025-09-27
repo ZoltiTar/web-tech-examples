@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+book, author, title, chapter, para {
+    display: block;
+}
+
+book {
+    margin: auto;
+    max-width: 80ch;
+    font-family: 'EB Garamond', serif;
+    padding: 2em;
+}
+
+author, title {
+    font-family: Anton, Arial, sans-serif;
+    text-align: center;
+}
+
+author {
+    font-size: 2em;
+}
+
+book > title {
+    font-size: 4em;
+    padding-bottom: 1em;
+    border-bottom: medium double black;
+}
+
+chapter > title {
+    margin: 1.5em 0 0.75em 0;
+}
