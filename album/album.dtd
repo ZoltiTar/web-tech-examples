@@ -1,0 +1,8 @@
+<!ELEMENT album (info, tracks)>
+<!ELEMENT info (artist, title, year)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT tracks (track+)>
+<!ELEMENT track (title, length)>
+<!ELEMENT length (#PCDATA)>
