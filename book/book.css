@@ -43,3 +43,26 @@ chapter > title::before {
     content: 'Chapter ' counter(chapter-number, upper-roman) '\2014';
     counter-increment: chapter-number;
 }
+
+para {
+    text-indent: 1.5em;
+    margin: 0.75em 0;
+    line-height: 1.5;
+}
+
+para:first-of-type { /* in this context could be `title + para:first-of-type` as well */
+    text-indent: 0;
+}
+
+para:first-of-type::first-letter { /* in this context could be `title + para:first-of-type::first-letter` as well */
+    font-size: 1.7em;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 0.05em;
+}
+
+para:hover {
+    background-color: slateblue;
+    color: white;
+    cursor: pointer;
+}
