@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE album SYSTEM "album.dtd">
+<?xml-stylesheet href="album.css" type="text/css"?>
 <album>
     <info>
         <artist>Steven Wilson</artist>

@@ -1,0 +1,38 @@
+album, info {
+    display: block;
+}
+
+album {
+    width: fit-content;
+    margin: 1em auto;
+    padding: 1em;
+    border: thin solid black;
+    border-radius: 0.5em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0.25em 0.25em 0.5em gray;
+}
+
+info * {
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+tracks {
+    display: table;
+    width: 100%;
+}
+
+track {
+    display: table-row;
+}
+
+track > title, length {
+    display: table-cell;
+    padding: 0.5em;
+}
+
+length {
+    text-align: right;
+}
