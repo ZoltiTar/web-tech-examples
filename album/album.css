@@ -39,6 +39,21 @@ tracks {
 
 track {
     display: table-row;
+    transition: background-color 0.75s, font-weight 0.4s;
+}
+
+track:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+track:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+track:hover {
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 track > title, length {
