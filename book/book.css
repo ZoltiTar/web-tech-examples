@@ -78,3 +78,14 @@ footnote::before {
     counter-increment: footnote-number;
     font-size: small;
 }
+
+footnote:hover {
+    font-size: large;
+    padding: 0.5em;
+    background-color: tomato;
+}
+
+footnote:hover::before {
+    font-size: large;
+    padding-right: 0.25em;
+}
