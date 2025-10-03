@@ -16,12 +16,14 @@ movie {
     padding: 0.5em;
 }
 
+
 title {
     display: none;
 }
 
-title:lang(en) {
+title:lang(en), year, genre, rating, votes {
     display: inline-block;
+    vertical-align: middle;
 }
 
 /*
@@ -61,3 +63,33 @@ movie[mpa-rating=NC-17] year {
     font-weight: bold;
 }
 */
+
+genre, rating {
+    color: white;
+}
+
+genre {
+    font-size: 0.9em;
+    padding: 0.25em 0.6em; /* generally for pill shape use 2x-3x horizontal value */
+    background: blueviolet;
+    border-radius: 9999px; /* achieves perfect border for pill effect */
+}
+
+rating {
+    background-color: hotpink;
+    font-weight: bold;
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
+rating::after {
+    content: '/10';
+}
+
+votes::before {
+    content: ' from ';
+}
+
+votes::after {
+    content: ' ratings';
+}
