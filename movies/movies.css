@@ -16,7 +16,6 @@ movie {
     padding: 0.5em;
 }
 
-
 title {
     display: none;
 }
@@ -75,11 +74,14 @@ genre {
     border-radius: 9999px; /* achieves perfect border for pill effect */
 }
 
+rating, movie:hover::after {
+    padding: 0.25em;
+    border-radius: 0.25em;
+}
+
 rating {
     background-color: hotpink;
     font-weight: bold;
-    padding: 0.25em;
-    border-radius: 0.25em;
 }
 
 rating::after {
@@ -92,4 +94,16 @@ votes::before {
 
 votes::after {
     content: ' ratings';
+}
+
+movie:hover {
+    background-color: powderblue;
+}
+
+movie:hover::after {
+    content: 'https://www.imdb.com/title/tt' attr(id);
+    background-color: gold;
+    color: blueviolet;
+    font-family: monospace;
+    font-size: large;
 }
