@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+movies {
+    border: medium solid indigo;
+    box-shadow: 0.25em 0.25em 0.5em indigo;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 1em;
+    padding: 1em;
+}
+
+movie {
+    display: list-item;
+    list-style-type: disc;
+    margin: 0 2em;
+    padding: 0.5em;
+}
