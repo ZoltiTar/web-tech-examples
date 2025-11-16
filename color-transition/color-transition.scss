@@ -1,0 +1,36 @@
+@use 'sass:color';
+@use 'sass:math';
+
+$base: pink;
+
+@mixin color-columns($n) {
+    @for $col from 1 through $n {
+        $color: color.adjust($color: $base, $hue: ($col - 1) * math.div(360, $n - 1));
+        
+        & > div:nth-child(#{$col}) {
+            background-color: $color;
+            
+            &::before {
+                content: '#{$color}';
+            }
+        }
+    }
+}
+
+body {
+    margin: 0;
+}
+
+div.columns {
+    display: flex;
+    height: 100vh;
+
+    @include color-columns(10);
+
+    & > div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

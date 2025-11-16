@@ -28,3 +28,4 @@
 
 * Assignment 1: [colors](/colors)
   - You can find an extra, ['overengineered'](/colors/colors-complex.scss) solution that showcases some additional sass features like: flow control, mixins and maps.  
+* Assignment 2: [color-transition](/color-transition)
