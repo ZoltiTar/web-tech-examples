@@ -20,7 +20,7 @@
    * Test Node and npm by running `node -v` and `npm -v`
  - Install sass:
    * `npm install -g sass` - installs sass globally (if you don't use the global `-g` flag, it will only get installed in the your current folder and it will init the folder with package.json and node_modules)
-   * if you use a node version manager, when installing packages it will only be available on the currently active node version
+   * Note: if you are using a node version manager, when installing packages it will only be available on the currently active node version
    * Test sass by running `sass -v`
  - Compile your sass stylesheet with `sass <input.scss> <output.scss>`
    * use the [--watch](https://sass-lang.com/documentation/cli/dart-sass/#watch) flag to compile whenever your file changes
