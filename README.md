@@ -1,7 +1,8 @@
 # Web Technologies Examples
 
 ---
-
+### Other assignments/labs: https://github.com/poszetkristof/web_tech_examples
+---
 ## XML and CSS
 
 ### 09/25
@@ -12,6 +13,7 @@
 * Assignment 1: [menu](/menu) 
 * Assignment 2: [movies](/movies)
 
+## Sass
 
 ### 11/13
  - Install Node.js/NPM:
