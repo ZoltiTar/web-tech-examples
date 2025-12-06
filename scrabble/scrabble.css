@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.scrabble {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+    td, th {
+        height: 3rem;
+        width: 3rem;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    th {
+        font-weight: normal;
+    }
+    
+    td {
+        background-color: green;
+        border: 2px solid #333;
+        font-size: 60%;
+
+        /* Triple word score (tws) */
+        &.tws {
+            background-color: red;
+
+            &::before {
+                content: 'Triple word';
+            }
+        }
+
+        /* Double word score (dws) */
+        &.dws {
+            background-color: pink;
+
+            &::before {
+                content: 'Double word';
+            }
+            
+            &.star::before {
+                content: '\2605';
+                font-size: 300%;
+            }
+        }
+        
+        /* Triple letter score (tls) */
+        &.tls {
+            background-color: blue;
+
+            &::before {
+                content: 'Triple letter';
+            }
+        }
+
+        /* Double letter score (dls) */
+        &.dls {
+            background-color: lightblue;
+
+            &::before {
+                content: 'Double letter';
+            }
+        }
+    }
+
+}
