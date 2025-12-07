@@ -31,3 +31,8 @@
 * Assignment 1: [colors](/colors)
   - You can find an extra, ['overengineered'](/colors/colors-complex.scss) solution that showcases some additional sass features like: flow control, mixins and maps.  
 * Assignment 2: [color-transition](/color-transition)
+
+## HTML/CSS
+ - Assignment 1: [scrabble](/scrabble)
+ - Assignment 2: [dungeon](/dungeon)
+   - 🎄 You can find a santa/christmas themed solution in addition to the 'official' one 🎄
