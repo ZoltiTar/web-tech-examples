@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Game</title>
+    <link rel="stylesheet" href="dungeon-santa.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button>Load Game</button>
+            <button>Save Game</button>
+            <button disabled>Restart</button>
+            <button>Quit</button>
+        </div>
+        <!--
+            Emmet abbreviation for initial table:
+            table.dungeon>tbody>tr>td.wall*11^tr*9>td.wall+td*9+td.wall^tr>td.wall*11
+        -->
+        <table class="dungeon">
+            <tbody>
+                <tr>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="ice elf"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="ice elf"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="ice gift"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="gift"></td>
+                    <td class="reindeer"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="santa"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="reindeer"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="ice"></td>
+                    <td class="wall"></td>
+                    <td class="elf"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="reindeer"></td>
+                    <td class="reindeer"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td class="ice elf"></td>
+                    <td class="ice gift"></td>
+                    <td class="ice elf"></td>
+                    <td class="wall"></td>
+                    <td class="gift"></td>
+                    <td class="wall"></td>
+                    <td></td>
+                    <td class="reindeer"></td>
+                    <td class="gift"></td>
+                    <td class="wall"></td>
+                </tr>
+                <tr>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                    <td class="wall"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info">
+            <label>Score: <output id="score">10</output></label>
+            <label>Health: <output id="health">5</output></label>
+            <label>Level: <output id="level">3</output></label>
+        </div>
+    </div>
+</body>
+</html>

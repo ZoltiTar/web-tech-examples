@@ -1,0 +1,101 @@
+.container {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 1rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    button {
+        flex: 1;
+        font-size: large;
+        padding: 1rem;
+    }
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    justify-content: space-around;
+    
+    label {
+        text-align: center;
+    }
+    
+    output {
+        color: gold;
+        font-weight: bold;
+    }
+}
+
+.dungeon {
+    border-collapse: collapse;
+    
+    td {
+        background-color: whitesmoke; /* Snow */
+        font-size: 200%;
+        height: 4rem;
+        text-align: center;
+        vertical-align: middle;
+        width: 4rem;
+    }
+    
+    td.wall { /* tree for aesthetic :) */
+        background-color: darkgreen;
+
+        &::before {
+            content: '\1F384'; 
+        }
+    }
+
+    td.ice {
+        background-color: turquoise;
+    }
+
+    td.reindeer::before { /* Stubborn reindeer */
+        content: "\1F98C";
+    }
+
+    td.elf::before { /* Naughty elf */
+        content: "\1F9DD";
+    }
+
+    td.gift::before {
+        content: "\1F381";
+    }
+
+    td.santa::before {
+        content: "\1F385";
+    }
+
+    td:hover {
+        background-color: lightcoral;
+    }
+}
+
+
+
+
+
+@media (orientation: portrait) {
+    div.container {
+        flex-direction: row;
+    }
+
+    div.controls {
+        flex-direction: column;
+    }
+
+    div.info {
+        flex-direction: column;
+    }
+}

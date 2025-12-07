@@ -1,0 +1,94 @@
+div.container {
+    background-color: indigo;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 1rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+div.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+div.controls button {
+    flex: 1;
+    font-size: large;
+    padding: 1rem;
+}
+
+div.info {
+    background-color: indigo;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    justify-content: space-around;
+}
+
+div.info label {
+    text-align: center;
+}
+
+div.info output {
+    color: gold;
+    font-weight: bold;
+}
+
+table.dungeon {
+    border-collapse: collapse;
+}
+
+table.dungeon td {
+    background-color: lightgray;
+    font-size: 200%;
+    height: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 4rem;
+}
+
+table.dungeon td.wall {
+    background-color: dimgray;
+}
+
+table.dungeon td.water {
+    background-color: royalblue;
+}
+
+table.dungeon td.bat::before {
+    content: "\1F987";
+}
+
+table.dungeon td.scorpion::before {
+    content: "\1F982";
+}
+
+table.dungeon td.gem::before {
+    content: "\1F48E";
+}
+
+table.dungeon td.hero::before {
+    content: "\1F9CD";
+}
+
+table.dungeon td:hover {
+    background-color: cornsilk;
+}
+
+@media (orientation: portrait) {
+    div.container {
+        flex-direction: row;
+    }
+
+    div.controls {
+        flex-direction: column;
+    }
+
+    div.info {
+        flex-direction: column;
+    }
+}
